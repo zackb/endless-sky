@@ -98,6 +98,7 @@ if(ES_USE_VCPKG)
 	set(MINIZIP_LIBRARIES "unofficial::minizip::minizip")
 else()
 	pkg_check_modules(MINIZIP REQUIRED minizip)
+	set(MINIZIP_LIBRARIES "-L/opt/homebrew/Cellar/minizip/1.3.1/lib -lminizip")
 endif()
 
 # Find the MinGW runtime DLLs.
