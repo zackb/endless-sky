@@ -1,0 +1,2 @@
+cmake --preset macos-arm -DES_USE_VCPKG=OFF
+cmake --build --preset macos-arm-debug
